@@ -29,3 +29,15 @@ let operate = (operator, num, num2) => {
 };
 
 let numButtons = document.querySelectorAll(".btn-num");
+
+let displayValue = 0;
+
+function getNumber(e) {
+  displayValue = e.target.value;
+}
+
+numButtons.forEach((numButton) => {
+  numButton.addEventListener("click", getNumber);
+});
+
+console.log(displayValue);

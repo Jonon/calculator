@@ -27,3 +27,5 @@ let operate = (operator, num, num2) => {
       return divide(num, num2);
   }
 };
+
+let numButtons = document.querySelectorAll(".btn-num");

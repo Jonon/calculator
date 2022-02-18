@@ -4,6 +4,7 @@
 }
 
 .calculator-buttons {
+  margin-top: 0.6rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.6rem;

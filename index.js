@@ -30,14 +30,24 @@ let operate = (operator, num, num2) => {
 
 let numButtons = document.querySelectorAll(".btn-num");
 
-let displayValue = 0;
+let displayValueOne = document.querySelector(".display-value_one");
+
+displayValueOne.textContent = 0;
+
+let displayArrayValue = [];
 
 function getNumber(e) {
-  displayValue = e.target.value;
+  displayArrayValue.push(e.target.value);
+
+  let getNumbersArray = displayArrayValue.map((num) => {
+    return num;
+  });
+
+  getNumbersArray = getNumbersArray.join("");
+
+  displayValueOne.textContent = getNumbersArray;
 }
 
 numButtons.forEach((numButton) => {
   numButton.addEventListener("click", getNumber);
 });
-
-console.log(displayValue);

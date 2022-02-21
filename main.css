@@ -3,6 +3,13 @@
   border: 1px solid #666b69;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .calculator-buttons {
   margin-top: 0.6rem;
   display: grid;

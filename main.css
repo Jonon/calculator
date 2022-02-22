@@ -12,6 +12,8 @@
 
 .calculator {
   width: 20rem;
+  background-color: #494949;
+  padding: 1rem;
 }
 
 .calculator-buttons {

@@ -44,6 +44,10 @@
   background-color: #54504b;
 }
 
+.operator {
+  background-color: #db8c2f;
+}
+
 .btn-clear {
   grid-column: span 3;
   width: 100%;

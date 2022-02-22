@@ -40,3 +40,8 @@
   grid-column: span 3;
   width: 100%;
 }
+
+.btn-0 {
+  grid-column: span 2;
+  width: 100%;
+}

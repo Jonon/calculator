@@ -35,3 +35,8 @@
   width: 1.5rem;
   height: 1.5rem;
 }
+
+.btn-clear {
+  grid-column: span 3;
+  width: 100%;
+}

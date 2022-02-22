@@ -3,6 +3,10 @@
   border: 1px solid #666b69;
 }
 
+.display p {
+  margin: 0.1rem 0.1rem;
+}
+
 .center {
   display: flex;
   justify-content: center;

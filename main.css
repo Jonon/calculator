@@ -1,5 +1,6 @@
 .display {
   display: flex;
+  background-color: #c4c4c4;
   border: 1px solid #666b69;
   border-radius: 0.2rem;
 }

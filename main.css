@@ -13,6 +13,7 @@
 .calculator {
   background-color: #494949;
   padding: 1rem;
+  border-radius: 5%;
 }
 
 .calculator-buttons {

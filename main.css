@@ -49,6 +49,7 @@
 }
 
 .btn-clear {
+  background-color: #65605a;
   grid-column: span 3;
   width: 100%;
 }

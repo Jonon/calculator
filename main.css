@@ -1,6 +1,7 @@
 .display {
   display: flex;
   border: 1px solid #666b69;
+  border-radius: 0.2rem;
 }
 
 .display p {

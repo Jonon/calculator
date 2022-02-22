@@ -40,6 +40,10 @@
   background-color: #acaaaa;
 }
 
+.btn-num {
+  background-color: #54504b;
+}
+
 .btn-clear {
   grid-column: span 3;
   width: 100%;

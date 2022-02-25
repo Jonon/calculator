@@ -37,14 +37,15 @@ displayValueOne.textContent = 0;
 let displayArrayValue = [];
 
 function getNumber(e) {
+  // Push Number into the array
   displayArrayValue.push(e.target.value);
-
+  // Loop through all numbers of the array
   let getNumbersArray = displayArrayValue.map((num) => {
     return num;
   });
-
+  // Create number
   getNumbersArray = getNumbersArray.join("");
-
+  // Update displayValue
   displayValueOne.textContent = getNumbersArray;
 }
 

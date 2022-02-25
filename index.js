@@ -54,4 +54,8 @@ numButtons.forEach((numButton) => {
 
 let operatorButtons = document.querySelectorAll(".operator");
 
-operatorButtons.forEach((operatorButton) => {});
+let setOperator = (e) => {};
+
+operatorButtons.forEach((operatorButton) => {
+  operatorButton.addEventListener("click", setOperator);
+});

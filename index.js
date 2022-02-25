@@ -51,3 +51,7 @@ function getNumber(e) {
 numButtons.forEach((numButton) => {
   numButton.addEventListener("click", getNumber);
 });
+
+let operatorButtons = document.querySelectorAll(".operator");
+
+operatorButtons.forEach((operatorButton) => {});

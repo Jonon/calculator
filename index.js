@@ -30,6 +30,7 @@ let operate = (operator, a, b) => {
 
 let numButtons = document.querySelectorAll(".btn-num");
 let operatorButtons = document.querySelectorAll(".operator");
+let equalButton = document.querySelector(".equal");
 
 let firstNum = "";
 let secondNum = "";

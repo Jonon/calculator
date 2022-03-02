@@ -52,6 +52,11 @@ function setNumber(e) {
 
 let setOperator = (e) => {
   operator = e.target.value;
+  // Create operator element everytime an operator button is clicked
+  let OperatorNum = document.createElement("p");
+  OperatorNum.textContent = operator;
+  let display = document.querySelector(".display");
+  display.appendChild(OperatorNum);
 };
 
 numButtons.forEach((numButton) => {

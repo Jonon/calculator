@@ -29,6 +29,11 @@ let operate = (operator, a, b) => {
 };
 
 let numButtons = document.querySelectorAll(".btn-num");
+let operatorButtons = document.querySelectorAll(".operator");
+
+let firstNum = "";
+let secondNum = "";
+let operator = "";
 
 let displayValueOne = document.querySelector(".display-value_one");
 
@@ -52,8 +57,6 @@ function getNumber(e) {
 numButtons.forEach((numButton) => {
   numButton.addEventListener("click", getNumber);
 });
-
-let operatorButtons = document.querySelectorAll(".operator");
 
 let setOperator = (e) => {};
 

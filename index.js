@@ -39,26 +39,18 @@ let displayValueOne = document.querySelector(".display-value_one");
 
 displayValueOne.textContent = 0;
 
-let displayArrayValue = [];
-
-function getNumber(e) {
-  // Push Number into the array
-  displayArrayValue.push(e.target.value);
-  // Loop through all numbers of the array
-  let getNumbersArray = displayArrayValue.map((num) => {
-    return num;
-  });
-  // Create number
-  getNumbersArray = getNumbersArray.join("");
-  // Update displayValue
-  displayValueOne.textContent = getNumbersArray;
+function setNumber(e) {
+  firstNum += e.target.value;
+  displayValueOne.textContent = firstNum;
 }
 
-numButtons.forEach((numButton) => {
-  numButton.addEventListener("click", getNumber);
-});
+let setOperator = (e) => {
+  operator = e.target.value;
+};
 
-let setOperator = (e) => {};
+numButtons.forEach((numButton) => {
+  numButton.addEventListener("click", setNumber);
+});
 
 operatorButtons.forEach((operatorButton) => {
   operatorButton.addEventListener("click", setOperator);

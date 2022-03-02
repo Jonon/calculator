@@ -40,8 +40,14 @@ let displayValueOne = document.querySelector(".display-value_one");
 displayValueOne.textContent = 0;
 
 function setNumber(e) {
-  firstNum += e.target.value;
-  displayValueOne.textContent = firstNum;
+  // Check if operator is set
+  if (operator === "") {
+    firstNum += e.target.value;
+    console.log(firstNum);
+    displayValueOne.textContent = firstNum;
+  } else {
+    secondNum += e.target.value;
+  }
 }
 
 let setOperator = (e) => {

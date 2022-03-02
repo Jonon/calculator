@@ -60,6 +60,13 @@ let setOperator = (e) => {
   display.appendChild(OperatorNum);
 };
 
+let calc = () => {
+  // Check if numbers are set
+  if (firstNum && secondNum !== "") {
+    console.log(operate(operator, Number(firstNum), Number(secondNum)));
+  }
+};
+
 numButtons.forEach((numButton) => {
   numButton.addEventListener("click", setNumber);
 });

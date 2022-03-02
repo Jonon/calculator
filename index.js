@@ -1,30 +1,30 @@
-function add(num, num2) {
-  return num + num2;
+function add(a, b) {
+  return a + b;
 }
 
-let subtract = (num, num2) => {
-  return num - num2;
+let subtract = (a, b) => {
+  return a - b;
 };
 
-let multiply = (num, num2) => {
-  return num * num2;
+let multiply = (a, b) => {
+  return a * b;
 };
 
-let divide = (num, num2) => {
-  return num / num2;
+let divide = (a, b) => {
+  return a / b;
 };
 
-let operate = (operator, num, num2) => {
+let operate = (operator, a, b) => {
   // calls one of the operators
   switch (operator) {
     case "add":
-      return add(num, num2);
+      return add(a, b);
     case "subtract":
-      return subtract(num, num2);
+      return subtract(a, b);
     case "multiply":
-      return multiply(num, num2);
+      return multiply(a, b);
     case "divide":
-      return divide(num, num2);
+      return divide(a, b);
   }
 };
 

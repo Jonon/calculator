@@ -53,11 +53,13 @@ body {
   background-color: #3f3d3a;
 }
 
-.operator {
+.operator,
+.equal {
   background-color: #db8c2f;
 }
 
-.operator:hover {
+.operator:hover,
+.equal:hover {
   background-color: #aa7539;
 }
 

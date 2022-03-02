@@ -67,3 +67,5 @@ numButtons.forEach((numButton) => {
 operatorButtons.forEach((operatorButton) => {
   operatorButton.addEventListener("click", setOperator);
 });
+
+equalButton.addEventListener("click", calc);

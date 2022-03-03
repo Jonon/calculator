@@ -31,6 +31,7 @@ let operate = (operator, a, b) => {
 let numButtons = document.querySelectorAll(".btn-num");
 let operatorButtons = document.querySelectorAll(".operator");
 let equalButton = document.querySelector(".equal");
+let clearButton = document.querySelector(".btn-clear");
 
 let firstNum = "";
 let secondNum = "";
@@ -76,3 +77,5 @@ operatorButtons.forEach((operatorButton) => {
 });
 
 equalButton.addEventListener("click", calc);
+
+clearButton.addEventListener("click", clear);

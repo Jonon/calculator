@@ -80,6 +80,8 @@ let clear = () => {
   displayValueOne = document.createElement("p");
   displayValueOne.classList.add("display-value_one");
   firstNum = "";
+  // Set operator value to default
+  operator = "";
   displayValueOne.textContent = 0;
 
   display.appendChild(displayValueOne);

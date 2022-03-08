@@ -36,6 +36,7 @@ let clearButton = document.querySelector(".btn-clear");
 let firstNum = "";
 let secondNum = "";
 let operator = "";
+let sum = "";
 
 let displayValueOne = document.querySelector(".display-value_one");
 
@@ -61,7 +62,10 @@ let setOperator = (e) => {
 let calc = () => {
   // Check if numbers are set
   if (firstNum && secondNum !== "") {
-    console.log(operate(operator, Number(firstNum), Number(secondNum)));
+    // Save sum
+    sum = operate(operator, Number(firstNum), Number(secondNum));
+    // display sum
+    displayValueOne.textContent = sum;
   }
 };
 

@@ -39,17 +39,17 @@ let operator = "";
 let sum = "";
 
 let displayValue = document.querySelector(".display-value");
-
 displayValue.textContent = 0;
 
 function setNumber(e) {
+  let number = e.target.value;
   // Check if operator is set
   if (operator === "") {
-    firstNum += e.target.value;
+    firstNum += number;
     console.log(firstNum);
     displayValue.textContent = firstNum;
   } else {
-    secondNum += e.target.value;
+    secondNum += number;
     displayValue.textContent += secondNum;
   }
 }

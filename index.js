@@ -66,6 +66,8 @@ let calc = () => {
     sum = operate(operator, Number(firstNum), Number(secondNum));
     // display sum
     displayValueOne.textContent = sum;
+    firstNum = sum;
+    secondNum = "";
   }
 };
 

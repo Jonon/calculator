@@ -68,6 +68,23 @@ let calc = () => {
   }
 };
 
+let clear = () => {
+  let display = document.querySelector(".display");
+
+  // Remove all children of class display
+  while (display.firstChild) {
+    display.removeChild(display.firstChild);
+  }
+
+  // Create new p tag to show displayValue
+  displayValueOne = document.createElement("p");
+  displayValueOne.classList.add("display-value_one");
+  firstNum = "";
+  displayValueOne.textContent = 0;
+
+  display.appendChild(displayValueOne);
+};
+
 numButtons.forEach((numButton) => {
   numButton.addEventListener("click", setNumber);
 });

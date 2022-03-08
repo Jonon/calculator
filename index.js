@@ -38,25 +38,25 @@ let secondNum = "";
 let operator = "";
 let sum = "";
 
-let displayValueOne = document.querySelector(".display-value_one");
+let displayValue = document.querySelector(".display-value");
 
-displayValueOne.textContent = 0;
+displayValue.textContent = 0;
 
 function setNumber(e) {
   // Check if operator is set
   if (operator === "") {
     firstNum += e.target.value;
     console.log(firstNum);
-    displayValueOne.textContent = firstNum;
+    displayValue.textContent = firstNum;
   } else {
     secondNum += e.target.value;
-    displayValueOne.textContent += secondNum;
+    displayValue.textContent += secondNum;
   }
 }
 
 let setOperator = (e) => {
   operator = e.target.value;
-  displayValueOne.textContent += operator;
+  displayValue.textContent += operator;
 };
 
 let calc = () => {
@@ -65,7 +65,7 @@ let calc = () => {
     // Save sum
     sum = operate(operator, Number(firstNum), Number(secondNum));
     // display sum
-    displayValueOne.textContent = sum;
+    displayValue.textContent = sum;
     firstNum = sum;
     secondNum = "";
   }
@@ -80,14 +80,14 @@ let clear = () => {
   }
 
   // Create new p tag to show displayValue
-  displayValueOne = document.createElement("p");
-  displayValueOne.classList.add("display-value_one");
+  displayValue = document.createElement("p");
+  displayValue.classList.add("display-value");
   firstNum = "";
   // Set operator value to default
   operator = "";
-  displayValueOne.textContent = 0;
+  displayValue.textContent = 0;
 
-  display.appendChild(displayValueOne);
+  display.appendChild(displayValue);
 };
 
 numButtons.forEach((numButton) => {

@@ -46,7 +46,6 @@ function setNumber(e) {
   // Check if operator is set
   if (operator === "") {
     firstNum += number;
-    console.log(firstNum);
     displayValue.textContent = firstNum;
   } else {
     secondNum += number;

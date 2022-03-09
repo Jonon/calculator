@@ -49,7 +49,7 @@ function setNumber(e) {
     displayValue.textContent = firstNum;
   } else {
     secondNum += number;
-    displayValue.textContent += secondNum;
+    displayValue.textContent += number;
   }
 }
 
@@ -82,6 +82,7 @@ let clear = () => {
   displayValue = document.createElement("p");
   displayValue.classList.add("display-value");
   firstNum = "";
+  secondNum = "";
   // Set operator value to default
   operator = "";
   displayValue.textContent = 0;

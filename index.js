@@ -71,23 +71,11 @@ let calc = () => {
 };
 
 let clear = () => {
-  let display = document.querySelector(".display");
-
-  // Remove all children of class display
-  while (display.firstChild) {
-    display.removeChild(display.firstChild);
-  }
-
-  // Create new p tag to show displayValue
-  displayValue = document.createElement("p");
-  displayValue.classList.add("display-value");
   firstNum = "";
   secondNum = "";
   // Set operator value to default
   operator = "";
   displayValue.textContent = 0;
-
-  display.appendChild(displayValue);
 };
 
 numButtons.forEach((numButton) => {

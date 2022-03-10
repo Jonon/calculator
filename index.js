@@ -72,9 +72,9 @@ let calc = () => {
   if (firstNum && secondNum !== "") {
     // Save sum
     sum = operate(operator, Number(firstNum), Number(secondNum));
-    // display sum
-    displayValue.textContent = sum;
     firstNum = sum;
+    // display sum
+    displayValue.textContent = firstNum;
     secondNum = "";
   }
 };

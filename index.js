@@ -15,6 +15,8 @@ let divide = (a, b) => {
 };
 
 let operate = (operator, a, b) => {
+  a = Number(a);
+  b = Number(b);
   // calls one of the operators
   switch (operator) {
     case "+":
@@ -56,7 +58,7 @@ function setNumber(e) {
 let setOperator = (e) => {
   if (operator !== "") {
     displayValue.textContent += e.target.value;
-    sum = operate(operator, Number(firstNum), Number(secondNum));
+    sum = operate(operator, firstNum, secondNum);
     firstNum = sum;
     secondNum = "";
     // Set new operator
@@ -71,7 +73,7 @@ let calc = () => {
   // Check if numbers are set
   if (firstNum && secondNum !== "") {
     // Save sum
-    sum = operate(operator, Number(firstNum), Number(secondNum));
+    sum = operate(operator, firstNum, secondNum);
     firstNum = sum;
     // display sum
     displayValue.textContent = firstNum;

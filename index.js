@@ -54,8 +54,17 @@ function setNumber(e) {
 }
 
 let setOperator = (e) => {
-  operator = e.target.value;
-  displayValue.textContent += operator;
+  if (operator !== "") {
+    displayValue.textContent += e.target.value;
+    sum = operate(operator, Number(firstNum), Number(secondNum));
+    firstNum = sum;
+    secondNum = "";
+    // Set new operator
+    operator = e.target.value;
+  } else if (operator === "") {
+    operator = e.target.value;
+    displayValue.textContent += operator;
+  }
 };
 
 let calc = () => {

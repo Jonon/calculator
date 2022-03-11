@@ -48,12 +48,19 @@ function setNumber(e) {
   // Check if operator is set
   if (operator === "") {
     firstNum += number;
+    hasDecimal(firstNum);
     displayValue.textContent = firstNum;
   } else {
     secondNum += number;
+    hasDecimal(secondNum);
     displayValue.textContent += number;
   }
 }
+
+let hasDecimal = (number) => {
+  if (number.includes(".")) {
+  }
+};
 
 let setErrorMessage = (errorMessage) => {
   displayValue.textContent = errorMessage;

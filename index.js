@@ -55,6 +55,10 @@ function setNumber(e) {
   }
 }
 
+let setErrorMessage = (errorMessage) => {
+  displayValue.textContent = errorMessage;
+};
+
 let setOperator = (e) => {
   if (operator !== "") {
     displayValue.textContent += e.target.value;
@@ -78,6 +82,11 @@ let calc = () => {
     // display sum
     displayValue.textContent = firstNum;
     secondNum = "";
+
+    // Check for infinity number
+    if (!isFinite(sum)) {
+      setErrorMessage("ERROR");
+    }
   }
 };
 

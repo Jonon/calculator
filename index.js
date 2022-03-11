@@ -58,8 +58,7 @@ function setNumber(e) {
 }
 
 let hasDecimal = (number) => {
-  if (number.includes(".")) {
-  }
+  return number.includes(".");
 };
 
 let setErrorMessage = (errorMessage) => {

@@ -48,17 +48,24 @@ function setNumber(e) {
   // Check if operator is set
   if (operator === "") {
     firstNum += number;
-    hasDecimal(firstNum);
+    disableDecimalBtn(hasDecimal(firstNum));
     displayValue.textContent = firstNum;
   } else {
     secondNum += number;
-    hasDecimal(secondNum);
+    disableDecimalBtn(hasDecimal(secondNum));
     displayValue.textContent += number;
   }
 }
 
 let hasDecimal = (number) => {
   return number.includes(".");
+};
+
+let disableDecimalBtn = (hasDecimal) => {
+  if (hasDecimal) {
+    console.log("Has decimal");
+    document.querySelector(".btn-decimal").disabled = true;
+  }
 };
 
 let setErrorMessage = (errorMessage) => {

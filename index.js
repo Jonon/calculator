@@ -63,8 +63,9 @@ let hasDecimal = (number) => {
 
 let disableDecimalBtn = (hasDecimal) => {
   if (hasDecimal) {
-    console.log("Has decimal");
     document.querySelector(".btn-decimal").disabled = true;
+  } else if (!hasDecimal) {
+    document.querySelector(".btn-decimal").disabled = false;
   }
 };
 

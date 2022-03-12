@@ -20,6 +20,7 @@ body {
   border-radius: 0.2rem;
   /* Display number to the right */
   justify-content: end;
+  overflow: hidden;
 }
 
 .display p {

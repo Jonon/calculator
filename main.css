@@ -2,6 +2,16 @@ body {
   background-color: #4d4945;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-calculator {
+}
+
 .display {
   display: flex;
   background-color: #c4c4c4;
@@ -14,13 +24,6 @@ body {
 .display p {
   margin: 0.1rem 0.1rem;
   font-family: "Ubuntu", sans-serif;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
 .calculator {

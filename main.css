@@ -25,6 +25,7 @@ body {
 .display p {
   margin: 0.1rem 0.1rem;
   font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
 }
 
 .calculator {
